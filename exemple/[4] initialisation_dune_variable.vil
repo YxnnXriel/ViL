@@ -1,0 +1,15 @@
+
+
+                            // ViL/Alima
+
+                            
+// INITIALISATION D'UNE VARIABLE
+
+var ma_variable; // decalaration
+
+ma_variable = @int(233); // initialisation d'une variable
+
+ma_variable = 234; // autre maniere d'initialiser une variable
+
+var mon_autre_variable = 122; // decalaration et initialisation sur une ligne
+

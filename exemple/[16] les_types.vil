@@ -1,0 +1,82 @@
+                            // ViL/Alima
+
+
+// LES TYPES ( LES STRUCTURES )
+
+/*
+    les structures sont un peut particuliere
+    il ya pas de POO mais j'ai mis des composant 
+    qui peuvent faire un semblant 
+    comme les fonction dans les types , des constructeurs ...
+    decouvrons 
+*/
+
+//voici un exmple d'une structure de personne 
+
+type Personne:{
+    var Nom; // le nom d'une personne
+    var Prenons; // le prenom d'une personne
+    var Age; // l'age d'une personne
+
+    /*
+        pour definir un 'constructeur' , ou celle qui vas initialiser les variables
+        on utilise les deux points "::" ,  vous devez definir cette fonction 
+        elle n'est pas denint de base , vous pouvez lui donner le nom que vous voulez
+        mais je recommande de lui donner le nom de la structure elle même , pour une question 
+        de lisibilité
+    */
+
+    // remarque , j'ai pas mis les ':' avant les parenthèse !
+
+    ::Personne(nom,prenom,age){
+        Nom = nom;
+        Prenons = prenom;
+        Age = age;
+    }
+
+    /*
+        il y a des fonction qui doivent être definir , comme
+        pour l'affichage ou la comparaison
+        l'exemple sera donner mais je recommande que vous les definissez elles toutes
+        NB : ces fonctions ne doivent rien prendre comme argumen
+    */
+
+    func __print__():{
+        println(Nom,' ',Prenons," : ",Age," ans");
+    }
+
+    func __cmp__():{
+        return Non;
+    }
+
+};
+
+
+
+
+
+/*
+    pour utiliser un type , on utilise aussi les deux "::" point juste apres 
+    le nom de la variable 
+    pour initialiser on utilise le mot clé + le nom du constructeur
+*/
+
+var p1::Personne = new Personne("Yxnn","Xriel",21);
+
+
+
+// pour afficher , je peut utilisé les fonctions d'affichage
+// ou la methode de ce type
+
+// exemple
+
+
+p1.__print__();// premiere forme d'affichage
+
+println(p1); // deuxieme forme d'affichage
+
+/*
+    on connais comment accéder au attribut donc je vous laisse decouvrir
+    NB : pour les listes , j'ai pas implementer les tableaux à multiples dimenssion
+    pas besoins des accesseux mais vous pouvez les definir
+*/

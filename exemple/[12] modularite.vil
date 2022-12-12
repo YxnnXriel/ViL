@@ -1,0 +1,22 @@
+
+
+                            // ViL/Alima
+
+// MODULARITE
+
+// j'ai implementer un autre fichier , un fichier str.vil 
+// j'ai pas gerer les mutliples inclusions 
+
+// pour faire la modularite , il suffit d'ajouter le mot clé "include"
+// include parce que j'aime bien , c'est simple à comprendre
+
+// dans le fichier "str.vil" , il est definir un type "type" 
+// vous pouvez déja jeter un coup d'oeil pour voir comment fonctionne ce dernier.
+
+
+include "../std/str/str.vil"
+
+
+// je vais pas utiliser le type ici , je reviendrais dans une autre fichier pour les explications
+
+println("j'ai include le fichier 'str.vil' ");

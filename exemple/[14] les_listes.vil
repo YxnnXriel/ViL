@@ -1,0 +1,46 @@
+
+
+                                // ViL/Alima 
+// LES lISTES
+
+
+// les listes peuvent prendre n'importe quel type de donnée , que se soit des chaine , des caractère , tous fonctionne   
+// je ne gère pas encore les list multidimentionnel , dans une version ulterieur elle sera abordé
+// il ya 4 maniere de crée une liste :
+// la liste avec les crochés avec valeurs initialiser
+// la liste avec le typé avec valeurs initialiser
+// la liste avec les crochés vides
+// la liste avec le typé vide
+
+
+var list_avec_type = @list(); // creation d'une liste avec typé
+var list_avec_crochet = []; // creation d'une liste avec crochés
+
+
+
+// si je tente d'afficher ces differents variables , le comportement sera vide
+// exemple
+
+println("ma list_avec_typé : ",list_avec_type)
+println("ma list_avec_crochet : ",list_avec_crochet)
+
+
+// vous pouvez les initialiser , tous depends de vous !
+
+
+// pour ajouter une valeurs, vous pouver passer par :
+// la methode "append" deja (oui la liste ce comporte comme un type)
+// la fonction "Append" qui est une fonction qui prend en argument une liste et les valeurs souhaités
+// d'autre methode comme remove sont aussi present , mais je vous conseile d'implementer les autres si ça vous chante 
+
+
+// voici un nexemple (decommente celui que tu souhaite essayer )
+
+// list_avec_crochet.append(12,"une chaine de caractère"); // premiere forme enoncé
+
+// Append(list_avec_crochet,12,16.9); // deuxieme forme enoncé
+
+println("deuxieme affichage de ma list_avec_crochet : ",list_avec_crochet)
+
+
+

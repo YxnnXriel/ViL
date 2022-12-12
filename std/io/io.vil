@@ -1,0 +1,55 @@
+
+/*
+
+        BIBLIOTHEQUE IO
+
+*/
+
+
+type IO:{
+    var BUFFER;
+    var fic::str;
+    var FileName;
+    var FileMod;
+
+    ::IO(){
+        // le BUFFER sera donné sous forme str
+        BUFFER = @str();
+    }
+
+    func readline():{
+        __bulletin_io_input__(BUFFER);
+        return BUFFER;
+    }
+    func toString():{
+        return @str(BUFFER);
+    }
+    func toInt():{
+        return @int(BUFFER);
+    }
+    func toFloat():{
+        return @float(BUFFER);
+    }
+    func toList():{
+        return @list(BUFFER);
+    }
+    func __print__():{
+        __bulletin_io_println__(BUFFER);
+    }
+    
+    func fopen(file_name,mod):{
+        fic = "null";
+        FileMod = mod;
+        FileName = file_name;
+        fic = __bulletin_io_open__(file_name,FileMod);
+        return 1;
+    }
+    func fclose():{
+        __bulletin_io_close__(fic);
+    }
+    func fwrite(<args>):{
+        for var i = 0 ; i < args.lenght(); i+=1:{
+            __bulletin_io_write__(fic,args[i]);
+        }
+    }
+}

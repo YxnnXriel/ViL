@@ -1,0 +1,49 @@
+
+
+
+                                // ViL/Alima 
+
+
+// LES DICTIONAIRES
+
+/*
+    de la même maniere que les listes , les dictionnaires peuvent accuellir n'importe quel type
+    mais les dictionnaires ici sont de tailles fixe par default , donc je vous deconseille d'utilisé sont typé avec argument vide
+    une version ulterieur sera apporté
+    l'equivalent pour les dictionnaires sont "{}" , pour definir ou accedé à une valeurs
+    j'utilise l'algorithme FNV 1-a pour les dictionnaires , je passerait a un plus securisé dans une autre version
+
+*/
+
+var mon_dict = @dict("premiere_key",23,"deuxieme_key",21); // declaration avec typé
+var mon_dict_ = {"1key":"yxnn","2key":21}; // declaration avec reconnaissance de type automatique
+
+/*
+    on ne peut pas afficher un dictionnaires en passant seulement le nom de ça variables
+    vous devez connaitre les clés pour afficher individuellement ! , si vous avez des objections , faites moi part  
+    NB pour un soucis de reconnaissance, j'ai plutot utilisé les "{}" pour pouvoir acceder a un element d'un dictionnaire
+    je trouve ça interessant , la ça fait une distinction à vu d'oeil entre une liste et un dictionnaires
+    si la key n'a pas été trouver , elle renvoie une addresse 
+*/
+
+
+
+println(mon_dict{"premiere_key"});
+println(mon_dict{"deuxieme_key"});
+
+// cas ou cette key ne figure pas dans le disctionnaire
+println(mon_dict{"troisieme_key"})
+
+
+
+// mais on peut modifier une valeurs d'un disctionnaire
+
+
+println("je modifier la valeur qui est à pour clé 'premiere_key' ")
+
+mon_dict{"premiere_key"} = "ariel";
+
+
+println(mon_dict{"premiere_key"});
+
+

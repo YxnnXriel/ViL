@@ -1,0 +1,40 @@
+                            // ViL/Alima
+
+
+// LE TYPAGE BLOQUER !
+
+/*
+    je sais que arriver à un moment , on voudrais que la variable 
+    ne change pas de "type" pour certain operation
+    on pourrait utilisé le typé mais ça reste à faire beaucoup 
+    de manipulation. Donc j'ai pensé à definir des variables 
+    de type par default. on ne s'eloigne pas de la sytaxe des 
+    type
+*/
+
+// exemple
+
+
+// cette variable recevera essentiellement des données de type entier
+// NB : la caste est utilisé pour certain type ne vous en faites pas
+var ma_variable::int = 3;
+
+
+println(ma_variable);
+
+
+// si j'essaie de changer le type de données , exemple , comme une 
+// str ,  l'interpreter me le refusera 
+
+
+ma_variable = "yxnn";
+
+
+println(ma_variable);
+
+
+
+// tous ça fonctionne avec n'importe quel type sauf : bool qui n'avait pas réellement besoin 
+// et vos propres définition de type .
+
+

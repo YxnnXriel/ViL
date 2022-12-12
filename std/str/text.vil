@@ -1,0 +1,82 @@
+
+/*
+    make interpreter from scratch
+    I continue the series of Sebastian karlons
+
+    variable definition:
+        let variable_name = <value>;
+        let variable_name; type Null
+    
+    function definition:
+        fun function_name(<args>){}
+        lfun function_name(<args>): inline
+
+*/
+
+type Personne:{
+
+    ::Personne(nom, prenom, age){
+        Nom = nom
+        Prenom = prenom
+        Age = age
+    }
+
+    var Nom
+    var Prenom
+    var Age
+
+    func __print__():{
+        println(
+            "Nom : " , Nom," ",
+            "Prenom : ",Prenom," ",
+            "Age : ",Age
+        )
+    }
+}
+
+
+func AjouterPersonne(list):{
+    var p = @str("null")
+    var n = @str("null")
+    var a = 0
+
+    println("Entrer le Nom :")
+    input(n)
+
+    println("entrer le Prenom :")
+    input(p)
+    
+    println("entrer l'age :")
+    input(a)
+
+    var p1::Personne = new Personne(n,p,a);
+
+    list.append(p1);
+}
+
+func Menu():{
+    var m = 0;
+    println("1 - Ajouter  personne");
+    println("2 - Supprimer personne")
+    println("3 - Liste personne")
+    println("4 - Modifier personne")
+    input(m);
+    return m;
+}
+
+
+func main(<args>):{
+    var listPersonne = [];
+    var l = 0;
+    while 1:{
+
+        l = Menu();
+
+        if l == 1:{
+            AjouterPersonne(listPersonne)
+        }
+        else if l == 3:{
+            println(listPersonne)
+        }
+    }
+}

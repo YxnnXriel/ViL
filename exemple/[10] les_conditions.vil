@@ -1,0 +1,49 @@
+
+
+                                // ViL/Alima 
+
+
+    LES CONDITIONS 
+/*
+        ici j'aborde aussi les comparaisons 
+        la comparaisons OU n'est pas implementer 
+        il le seras dans une prochaines version
+        les conditions on une syntaxe un peut chiante,
+        mais pour un soucis de compatibilité , cela doit ête mis 
+        dans les prochaines version la syntaxe peut changer
+        je prepare une qui va ressembler beaucoup a "python"
+        pour les conditions, nous avons :  "if" , "else if" , "else" 
+        NB: les parenthèses sont optionelles
+*/
+
+var k = @int();
+
+println("Entrer votre age :");
+input(k);
+
+if (k > 18):{
+    println("vous ête majeur !");
+}else if k == 18 :{
+    println("vous venez de rentrer dans l'age adulte !");
+}else:{
+    println("vous ête mineur !");
+}
+
+
+// defaut d'un typage faible , on ne perd pas la notion de
+// type , je vous offre la possibilité de comparer avec le typé
+
+// exemple
+
+
+var m = 45;
+
+if m == @float :{
+
+    println("ma variable est de type entier");
+
+}else :{
+
+    println("ma variable n'est pas de type entier");
+
+}
