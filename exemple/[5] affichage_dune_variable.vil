@@ -1,0 +1,14 @@
+
+
+                                // ViL/Alima 
+
+// affichage d'une variable
+// pour afficher une variable on fait renseigne juste cette variable dans une des fonctions d'affichage
+// si la variable est de type "type" , cette variable doit absolument avoir une fonction d'affichage nommé "__print__" , par default cette 
+// variable n'est pas defini et donc l'implementation depend du programmeur. le comportement par default lorsque cette fonction n'est pas implementer
+// c'est quel affiche l'addresse de l'intence du type.
+
+
+var ma_variable = @float(178_222);
+
+println("ma_variable est égale a : ",ma_variable);

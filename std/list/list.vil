@@ -1,0 +1,39 @@
+
+type List:{
+    var l::list;
+
+    ::List(nbr){
+        l = @list();
+
+        if nbr < 0:{
+            nbr *= -1;
+            for var i = nbr; i >= 0; i-=1:{
+                l.append(i);
+            }
+        }else:{
+            for var i = 1; i <= nbr; i+=1:{
+                l.append(i);
+            }
+        }
+
+    }
+
+    func __print__():{
+        println(l);
+    }
+
+    func get(v):{
+
+        if v == @int && l == @list :{
+            if v < l.lenght():{
+                return __bulletin_list_get_element__(l,v);
+            }else:{
+                return -1;
+            }
+        }else:{
+            return -1;
+        }
+    
+    }
+}
+

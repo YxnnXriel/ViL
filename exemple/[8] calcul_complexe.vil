@@ -1,0 +1,11 @@
+
+                            // ViL/Alima
+
+
+// CALCULE COMPLEXE
+
+// les bibliothèques de mathematique ne sont pas encore implementer
+
+var res = 12 + 2 * 7 + ( 99 / (4 * 28) ) -100;
+
+println("res = ",res);

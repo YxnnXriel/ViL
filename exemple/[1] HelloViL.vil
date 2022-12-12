@@ -1,0 +1,29 @@
+                                // ViL/Alima 
+/*
+-------------------------------------------------------------------------------------------------+
+    langage de programation type interpreter ecrit en C developper par Yxnn Xriel                |
+    ViL par rapport à Nim , pour une touche de modernité                                         |
+    et je sais pas je voulais un nom simple qui restait dans la tête                             |
+    autre nom "Alima" , celui de ma personne fav                                                 |
+    les deux noms sont valides , pour une question de lisibilité                                 |
+    le nom "ViL" sera beaucoup abordé                                                            |
+-------------------------------------------------------------------------------------------------+
+*/
+
+// print   -> pour affichage simple.
+// println -> pour affichage et retour à la ligne .
+
+
+println("Bonjour, ViL !");
+
+
+/*
+    MISE A JOUR
+        - la porté des variables
+        - les fonctions
+        - les fonction lamba
+        - les dictionnaires
+        - la modularité
+        - Les types dans les tableaux
+        - les tableaux à deux dimenssion
+*/

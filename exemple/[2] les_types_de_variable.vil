@@ -1,0 +1,41 @@
+                            // ViL/Alima
+
+/*
+    LES TYPES DE VARIABLE
+bien vrai que ce langage soit de typage "faible" , nous pouvons 
+faire un tour sur la prise en charge des variable
+    
+              LES TYPES
+  Caractère -> "char" 
+  Boolean -> "boolean" ou "bool"
+  Entier -> "int"
+  flottant -> "float"
+  chaine de Caractère -> "string"
+  liste / tableau -> "list"
+  dictionaire -> "dict"
+  types personnalisé -> "type"
+
+  tous ces types utilise le "typé" (nom donnée pour caster ou changer le comportement d'une variable) avec le '@'
+  NB : le typé n'est pas defini pour certain type
+
+*/
+
+var mon_caractere = @char('y');  // var mon_caractere = 'a'; fonctionne aussi
+
+var mon_boolean = true; 
+
+var mon_entier = @int(21); // var mon_entier = 21; fonctionne aussi
+
+var mon_flottant = @float(12.98); // var mon_flottant = 12.98;
+
+var ma_chaine = @str("ViL peut être optimisé au encore"); // var ma_chaine = "ma chaine ect ...";
+
+var ma_liste = @list(1,2,9,1); // var ma_liste = [1,9,7]; fonctionne aussi
+
+var mon_dictionnaire = @dict("key",12,"Alima",true); // var mon_dictionnaire = {"key":22 , "Alima": true }; est l'equivalent
+
+// var mon_type_perso = new mon_type_implementer("ma chaine",@list(1,2,3));
+
+// ce dernier est commenté parce que le type "mon_type_implementer" n'est pas declarer et pas encore implementer
+
+

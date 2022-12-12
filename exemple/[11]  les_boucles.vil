@@ -1,0 +1,47 @@
+
+
+                                // ViL/Alima 
+
+
+// LES BOUCLES
+
+// pour les boucles nous avons deux : while et for
+
+
+
+// nous allons faire une table de multiplication
+
+
+var nbr = @int();
+
+println("entrer le numero de la table de multiplication que vous voulez effectuer : ");
+input(nbr);
+
+println();
+
+# utilisation de la boucle while
+# NB: les parenthèses sont optionelles
+
+var i = 0;
+while (i <= 10):{
+    println(nbr , " x " ,i ,"  = " , nbr*i);
+    i +=1; // l'incrementation d'une variable ce fait comme ci
+}
+
+
+// utilisation de la boucle for
+
+// la table de multiplication a l'envers
+
+i -=1;
+
+println();
+println("la table de multiplication a l'envers !");
+println();
+
+for i ; i >= 0 ; i-=1:{
+    println(nbr , " x " ,i ,"  = " , nbr*i);
+}
+
+
+

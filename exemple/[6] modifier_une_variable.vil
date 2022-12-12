@@ -1,0 +1,17 @@
+
+
+                                // ViL/Alima 
+
+
+// MODIFIER UNE VARIABLE
+
+
+var ma_var = @int(23); // cette variable est de type "entier"
+
+
+// je change le comportement de ma variable , elle devient de type "chaine de caractère"
+
+
+
+ma_var = "ma chaine"
+

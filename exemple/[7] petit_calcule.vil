@@ -1,0 +1,22 @@
+
+
+                            // ViL/Alima
+
+
+
+// PETIT CALCULE
+
+// il y a certain comportement sur les variable comme la multiplication
+// d'une chaine de Caractère , ce dernier concatène n fois la chaine .
+// l'addiction avec une chaine de Caractère concatène juste les deux valeur
+
+
+
+var c1 = 12;
+var c2 = 12;
+
+var res = c1 + c2;
+
+
+
+println("c1 + c2 = ",res)

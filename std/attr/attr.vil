@@ -1,0 +1,21 @@
+/*
+    ATTRIBUT.vil
+*/
+
+
+func SortListInt(list):{
+    var j = 0;
+    var i = 0;
+    var temp = 0;
+    var size = list.lenght();
+    
+    for i = 0; i < size -1 ; i +=1:{
+        for j = i+1 ; j < size ; j+=1:{
+            if list[i] < list[j]:{
+                temp = list[i];
+                list[i] = list[j];
+                list[j] = temp;
+            }
+        }
+    }    
+}

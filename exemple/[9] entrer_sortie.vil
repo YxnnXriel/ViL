@@ -1,0 +1,35 @@
+/*
+                            ViL/Alima
+
+
+  ENTER SORTIE
+
+  il est bon d'initialiser les variables pour permettre sa bonne ecriture
+  si ce dernier n'est pas initialiser et qu'on tente d'ecrire dans cette variable,
+  l'interpreteur risque de crié (crasher mais j'ai voulu rendre ça stylé ) 
+  ou saute , ça valeur deviendra une adresse memoire 
+
+  pour palier a ce probleme , vous pouvez utiliser le typé sans passer quelque chose dans 
+  ses arguments , cela evite de d'initialiser avec une valeur non voulu au depart
+
+ le comportement de input changera dans les prochaines version
+
+ je vous laisse la latitude d'essaiyer input sur chaque type et de constater le resultat 
+
+*/
+
+var nbr = @str("null");
+var kk = @str("null");
+print("entrer un nombre : ");
+
+
+input(nbr);
+print("entrer un autre nombre : ");
+input(kk);
+
+
+//  on peut appeller print ou println sans arguments , celui ci n'execute rien juste ça consequence
+
+println();
+
+println("le nombre entrer est : ",nbr);

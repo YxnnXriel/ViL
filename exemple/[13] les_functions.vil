@@ -1,0 +1,103 @@
+                            
+                            
+                            
+                            // ViL/Alima
+
+
+// LES FONCTION
+
+/*
+
+ fonction peut ce declarer avec soit func , ou function
+ comme le langage est faiblement typé , vous pouver declarer les arguments comme
+ un acces à une variable 
+ depuis j'ai pas encore enoncé la possibilité de faire un main , un point d'entrer
+ c'est a vous de definir cette fonction même si elle aura sa propre porté , c'est à vous de
+ faire la mise au point
+ les references seront bientot disponible;
+ mais les listes et les disctionaire sont déja des pointeur 
+ donc elle sont passé en parametre comme un pointeur
+
+*/
+
+// exemple de fonction
+
+
+func Ma_Fonction_Addition(nbr1,nbr2) : {
+    return nbr1 + nbr2;
+}
+
+
+// function qui renvoie le type sous formes de chaine de caractère
+func typeof(v):{
+
+
+    if v == @int:{
+        return "int";
+
+    }else if v == @float:{
+
+        return "float";
+    }else if v == @bool:{
+
+        return "bool";
+    }else if v == @char:{
+
+        return "char";
+    }else if v == @list:{
+
+        return "list";
+    }else if v == @dict:{
+
+        return "dict";
+    }else if v == @type:{
+
+        return "type";
+    }
+
+    return "unknown" ;
+}
+
+// li -> la liste
+// dp -> la valeur de depart
+// fi -> la valeur de fin
+
+func Initialise_List(li,dp,fi):{
+
+
+    if typeof(dp) != "int" && typeof(fi) != "int":{
+        return 0;
+    }
+
+    if fi < dp:{
+        var perm = fi ;
+        fi = dp;
+        dp = perm;
+    }
+
+
+    for var i = dp ; i <= fi ; i+=1:{
+        Append(li,i);
+    }
+
+    return 1;
+}
+
+
+
+
+var a = 3;
+var b = 2;
+println("a + b = ",Ma_Fonction_Addition(a,b));
+
+var list = @list(); # une liste vide !
+
+if Initialise_List(list,10,1) == 1:{
+
+    println(list);
+
+}else :{
+    println("l'initialisation de la liste na pas fonctionner !");
+}
+
+
