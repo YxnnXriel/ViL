@@ -21,6 +21,22 @@ Contact me by email yannariel13@gmail.com for help, ask questions or contribute 
 
 # Examples
 
+>( new ) execute functions written in C
+
+ execute functions written in C with the dynamic libraries .so (linux)
+
+ ```js
+    // you can use the functions of libVil (the libvil.so library) to be able to be compatible with the interpreter
+
+    include [pi] in "std/libmath.so"
+
+    var piValue = pi();
+
+    println(piValue);
+
+ ```
+
+
 > les types de variables 
 ```c
     caractère -> char
@@ -107,7 +123,7 @@ Contact me by email yannariel13@gmail.com for help, ask questions or contribute 
 
 
     println(
-        dict_food_price{1} // I did this for the visual and not to confuse between a list and a dictionary
+        dict_food_price{"chocolat"} // I did this for the visual and not to confuse between a list and a dictionary
     );
 
 ```
@@ -170,11 +186,12 @@ Contact me by email yannariel13@gmail.com for help, ask questions or contribute 
 
 ```
 
+
+
 # Next release and other
 
     you can contact me if you want to help with this little language. see contact / help section
 
- the possibility of adding your libraries written in C would be brought in the next updates. 
 
  an example file will be provided for more details on this language in french.
 
