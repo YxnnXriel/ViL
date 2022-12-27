@@ -1,0 +1,29 @@
+/*
+    UPDATE
+        - new for statment
+        - fix bug scope
+        - fix bug list
+*/
+
+
+type List:{
+    
+    ::List(d,f){
+        liste = @list();
+        liste.interval(d,f);
+    }
+
+    var liste::list;
+
+    lfunc __print__():
+        for var m in liste:
+            print(m," ");
+}
+
+
+
+
+var p = new List(1,9);
+
+
+println(p)
